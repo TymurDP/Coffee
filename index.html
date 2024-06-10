@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Coffee</title>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul class="header__menu">
+                <li class="header__logo-wrapper"><img src="./images/logo.png" alt="Elite Coffee" class="logo"></li>
+                <!-- <li>
+                    <p class="header__menu-region">
+                        <select name="region" class="country">
+                            <option value="1">Europe</option>
+                            <option value="1">America</option>
+                        </select>
+                    </p>
+                </li> -->
+                <li>
+                    <ul class="header__menu-location">
+                        <li><img src="./images/icons/location.svg" alt="Location" class="location"></li>
+                        <li>
+                            <select name="country" class="country">
+                                <option value="1">Portugal</option>
+                                <option value="2">Austria</option>
+                                <option value="3">Belgium</option>
+                                <option value="4">Denmark</option>
+                                <option value="5">France</option>
+                                <option value="6">Italy</option>
+                                <option value="7">Poland</option>
+                                <option value="8">Germany</option>
+                                <option value="9">Spain</option>
+                                <option value="10">Sweden</option>
+                                <option value="10">Switzerland</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <li>Shipping</li>
+                <li>Contact us</li>
+                <li class="header__menu-search">
+                    <input type="text" class="search-input">
+                    <img src="./images/icons/search.svg" alt="search" class="search">
+                </li>
+                <li>
+                    <ul class="header__menu-region">
+                        <li><img src="./images/uk-flag.png" alt="GB"></li>
+                        <li><select name="language" class="country">
+                                <option value="1">EN</option>
+                                <option value="2">DE</option>
+                                <option value="3">ESP</option>
+                                <option value="4">IT</option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li>
+                    <p>
+                        <select name="currency" class="country">
+                            <option value="1">&#8364;</option>
+                            <option value="2">$</option>
+                        </select>
+                    </p>
+                </li> -->
+                <li>
+                    <ul class="header__login">
+                        <li><img src="./images/fav-sm.svg" alt="Fav"></li>
+                        <li><img src="./images/user.svg" alt="User"></li>
+                        <li><img src="./images/cart-sm.svg" alt="Cart"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="subheader">
+        <div class="container">
+            <ul class="subheader__menu">
+                <li>Coffee beans</li>
+                <li>Ground coffee</li>
+                <li>Capsules</li>
+                <li>Sale</li>
+                <li>Bestsellers</li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero__text">
+                    <li class="hero__motto">Just try it ...</li>
+                    <li>
+                        <h1 class="hero__title">elite coffee boutique</h1>
+                    </li>
+                    <li><button class="hero__button" id="btn">Shop now</button></li>
+                </ul>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="brands__wrapper">
+                <div class="container">
+                    <ul class="brands__images">
+                        <li><img src="./images/valdez.png" alt="Juan Valdes"></li>
+                        <li><img src="./images/lavazza.png" alt="lavazza"></li>
+                        <li><img src="./images/julius.png" alt="Julius Melni"></li>
+                        <li><img src="./images/starbucks.png" alt="Starbucks"></li>
+                        <li><img src="./images/illy.png" alt="Illy"></li>
+                        <li><img src="./images/attibassi.png" alt="Attibassi"></li>
+                        <li><img src="./images/malongo.png" alt="Malongo"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bestsellers" id="bestsellers">
+            <div class="container">
+                <h2>Bestsellers</h2>
+                <ul class="bestsellers__wrapper">
+                    <li class="card">
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/lavazza-aroma.png" alt="Lavazza aroma"
+                                class="card-image">
+                        </div>
+                        <p class="card-title">Lavazza Crema e Aroma</p>
+                        <p class="card-product">Coffee beans</p>
+                        <p class="card-info"><span class="card-weight">1000 g</span>
+                            <span class="card-price">€13.99</span>
+                        </p>
+                        <p class="card-cart"><img src="./images/icons/cart-big.png" alt="Add to cart"></p>
+                    </li>
+                    <li class="card">
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/illy-can.png" alt="Illy Classico Can"
+                                class="card-image">
+                        </div>
+                        <p class="card-title">Illy Classico Can</p>
+                        <p class="card-product">Ground coffee</p>
+                        <p class="card-info"><span class="card-weight">250 g</span>
+                            <span class="card-price">€9.99</span>
+                        </p>
+                        <p class="card-cart"><img src="./images/icons/cart-big.png" alt="Add to cart"></p>
+                    </li>
+                    <li class="card">
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/julius-utz.png" alt="Julius Meinl Espresso UTZ"
+                                class="card-image">
+                        </div>
+                        <p class="card-title">Julius Meinl Espresso UTZ</p>
+                        <p class="card-product">Coffee beans</p>
+                        <p class="card-info"><span class="card-weight">500 g</span>
+                            <span class="card-price">€15.99</span>
+                        </p>
+                        <p class="card-cart"><img src="./images/icons/cart-big.png" alt="Add to cart"></p>
+                    </li>
+                    <li class="card">
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/nespresso.png" alt="Nespresso ETHIOPIA"
+                                class="card-image">
+                        </div>
+                        <p class="card-title">Nespresso ETHIOPIA</p>
+                        <p class="card-product">Capsules</p>
+                        <p class="card-info"><span class="card-weight">10 pcs</span>
+                            <span class="card-price">€7.99</span>
+                        </p>
+                        <p class="card-cart"><img src="./images/icons/cart-big.png" alt="Add to cart"></p>
+                    </li>
+                </ul>
+                <button class="card-button">See all Bestsellers</button>
+            </div>
+        </section>
+        <section class="offer">
+            <div class="container">
+                <div class="offer__wrapper">
+                    <p class="offer__image-wrapper"> <img src="./images/offer.jpg" alt="Special offer"
+                            class="offer__image"></p>
+                    <div class="offer__info">
+                        <p class="offer__title">Special offer</p>
+                        <p class="offer__subtitle"><span class="marsala">"Morning Starter"</span> Gift Basket</p>
+                        <ul class="offer__info-wrapper">
+                            <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Bialetti</span>
+                                Moka Cup Espresso Maker</li>
+                            <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Lavazza</span>
+                                Drip Coffee Gran Aroma Light Roast (250 g)</li>
+                            <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Lavazza</span>
+                                Drip Coffee Intenso Dark Roast (250 g)</li>
+                            <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Lavazza</span>
+                                Drip Coffee Classico Medium Roast (250 g)</li>
+                            <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Mulino
+                                    Bianco</span>
+                                Cuor di Mela Apple Cookies</li>
+                            <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Sanniti</span>
+                                Plum Fruit Spread</li>
+                        </ul>
+                        <ul class="offer__price-wrapper">
+                            <li class="offer__price">€59.99</li>
+                            <li><button class="hero__button">Buy now</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bestsellers padding" id="sale">
+            <div class="container">
+                <h2>Sale</h2>
+                <ul class="bestsellers__wrapper">
+                    <li class="card">
+                        <p class="sale">-23%</p>
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/lavazza-oro.png" alt="Lavazza Qualita Oro"
+                                class="card-image">
+                        </div>
+                        <p class="card-title">Lavazza Qualita Oro</p>
+                        <p class="card-product">Coffee beans</p>
+                        <p class="card-info"><span class="card-weight">1000 g</span>
+                            <span class="card-price">€17.99</span>
+                        </p>
+                        <p class="card-cart"><span class="old-price">€22.2</span>
+                            <img src="./images/icons/cart-big.png" alt="Add to cart">
+                        </p>
+                    </li>
+                    <li class="card">
+                        <p class="sale">-25%</p>
+                        <img src="/images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/malongo-grand-reserve.png"
+                                alt="Malongo La Grande Reserve" class="card-image">
+                        </div>
+                        <p class="card-title">Malongo La Grande Reserve</p>
+                        <p class="card-product">Coffee beans</p>
+                        <p class="card-info"><span class="card-weight">3000 g</span>
+                            <span class="card-price">€99.99</span>
+                        </p>
+                        <p class="card-cart"><span class="old-price">€124.99</span>
+                            <img src="./images/icons/cart-big.png" alt="Add to cart">
+                        </p>
+                    </li>
+                    <li class="card">
+                        <p class="sale">-18%</p>
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/starbucks-espresso.png"
+                                alt="Starbucks Espresso Roast" class="card-image">
+                        </div>
+                        <p class="card-title">Starbucks Espresso Roast</p>
+                        <p class="card-product">Ground coffee</p>
+                        <p class="card-info"><span class="card-weight">200 g</span>
+                            <span class="card-price">€6.99</span>
+                        </p>
+                        <p class="card-cart"><span class="old-price">€8.25</span>
+                            <img src="./images/icons/cart-big.png" alt="Add to cart">
+                        </p>
+                    </li>
+                    <li class="card">
+                        <p class="sale">-7%</p>
+                        <img src="./images/icons/fav.svg" alt="Fav" class="fav">
+                        <div class="card-images"><img src="./images/lucaffe.png" alt="Lucaffe Mr.Exclusive Can"
+                                class="card-image">
+                        </div>
+                        <p class="card-title">Lucaffe Mr.Exclusive Can</p>
+                        <p class="card-product">Ground coffee</p>
+                        <p class="card-info"><span class="card-weight">250 g</span>
+                            <span class="card-price">€11.79</span>
+                        </p>
+                        <p class="card-cart"><span class="old-price">€12.62</span>
+                            <img src="./images/icons/cart-big.png" alt="Add to cart">
+                        </p>
+                    </li>
+                </ul>
+                <button class="card-button">See all sale</button>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
