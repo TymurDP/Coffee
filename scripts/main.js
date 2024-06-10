@@ -1,8 +1,8 @@
 "use strict";
 
 const fav = document.querySelectorAll(".fav");
-const favOk = "http://127.0.0.1:5500/images/icons/fav.svg";
-const favNo = "http://127.0.0.1:5500/images/icons/fav-ok.svg";
+const favOk = "https://tymurdp.github.io/Coffee/images/icons/fav.svg";
+const favNo = "https://tymurdp.github.io/Coffee/images/icons/fav-ok.svg";
 
 for (let i = 0; i < fav.length; i++) {
   fav[i].onclick = () => {
