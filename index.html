@@ -12,15 +12,11 @@
     <header class="header">
         <div class="container">
             <ul class="header__menu">
-                <li class="header__logo-wrapper"><img src="./images/logo.png" alt="Elite Coffee" class="logo"></li>
-                <!-- <li>
-                    <p class="header__menu-region">
-                        <select name="region" class="country">
-                            <option value="1">Europe</option>
-                            <option value="1">America</option>
-                        </select>
-                    </p>
-                </li> -->
+                <li class="header__logo-wrapper">
+                    <picture>
+                        <source media="(min-width:1024px)" srcset="./images/logo.png">
+                        <img src="./images/logo-50.png" alt="Elite Coffee" class="logo">
+                    </picture>
                 <li>
                     <ul class="header__menu-location">
                         <li><img src="./images/icons/location.svg" alt="Location" class="location"></li>
@@ -41,8 +37,8 @@
                         </li>
                     </ul>
                 </li>
-                <li>Shipping</li>
-                <li>Contact us</li>
+                <li class="shipping">Shipping</li>
+                <li class="shipping">Contact us</li>
                 <li class="header__menu-search">
                     <input type="text" class="search-input">
                     <img src="./images/icons/search.svg" alt="search" class="search">
@@ -74,6 +70,7 @@
                         <li><img src="./images/cart-sm.svg" alt="Cart"></li>
                     </ul>
                 </li>
+                <li class="header__burger"><img src="./images/burger.svg" alt="Menu"></li>
             </ul>
         </div>
     </header>
@@ -104,18 +101,18 @@
             <div class="brands__wrapper">
                 <div class="container">
                     <ul class="brands__images">
-                        <li><img src="./images/valdez.png" alt="Juan Valdes"></li>
-                        <li><img src="./images/lavazza.png" alt="lavazza"></li>
-                        <li><img src="./images/julius.png" alt="Julius Melni"></li>
-                        <li><img src="./images/starbucks.png" alt="Starbucks"></li>
-                        <li><img src="./images/illy.png" alt="Illy"></li>
-                        <li><img src="./images/attibassi.png" alt="Attibassi"></li>
-                        <li><img src="./images/malongo.png" alt="Malongo"></li>
+                        <li class="brands__image"><img src="./images/valdez.png" alt="Juan Valdes"></li>
+                        <li class="brands__image"><img src="./images/lavazza.png" alt="lavazza"></li>
+                        <li class="brands__image"><img src="./images/julius.png" alt="Julius Melni"></li>
+                        <li class="brands__image"><img src="./images/starbucks.png" alt="Starbucks"></li>
+                        <li class="brands__image"><img src="./images/illy.png" alt="Illy"></li>
+                        <li class="brands__image"><img src="./images/attibassi.png" alt="Attibassi"></li>
+                        <li class="brands__image"><img src="./images/malongo.png" alt="Malongo"></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="bestsellers" id="bestsellers">
+        <!-- <section class="bestsellers" id="bestsellers">
             <div class="container">
                 <h2>Bestsellers</h2>
                 <ul class="bestsellers__wrapper">
@@ -170,14 +167,20 @@
                 </ul>
                 <button class="card-button">See all Bestsellers</button>
             </div>
-        </section>
+        </section> -->
         <section class="offer">
             <div class="container">
+                <p class="offer__title">Special offer</p>
                 <div class="offer__wrapper">
-                    <p class="offer__image-wrapper"> <img src="./images/offer.jpg" alt="Special offer"
-                            class="offer__image"></p>
+                    <p class="offer__image-wrapper">
+                        <picture>
+                            <source media="(min-width:1280px)" srcset="./images/offer.jpg">
+                            <source media="(min-width:465px)" srcset="./images/offer-400.jpg">
+                            <img src="./images/offer-300.jpg" alt="Special offer">
+                        </picture>
+                    </p>
                     <div class="offer__info">
-                        <p class="offer__title">Special offer</p>
+
                         <p class="offer__subtitle"><span class="marsala">"Morning Starter"</span> Gift Basket</p>
                         <ul class="offer__info-wrapper">
                             <li><img src="./images/check.png" alt="-" class="check"><span class="strong">Bialetti</span>
@@ -202,7 +205,7 @@
                 </div>
             </div>
         </section>
-        <section class="bestsellers padding" id="sale">
+        <!-- <section class="bestsellers padding" id="sale">
             <div class="container">
                 <h2>Sale</h2>
                 <ul class="bestsellers__wrapper">
@@ -269,12 +272,12 @@
                 </ul>
                 <button class="card-button">See all sale</button>
             </div>
-        </section>
+        </section> -->
         <section class="products">
             <div class="container">
                 <h2>Our products</h2>
                 <ul class="products__wrapper">
-                    <li class="procucts__card">
+                    <li class="products__card">
                         <p class="products__card-title">Coffee beans</p>
                         <img src="./images/coffee-beans.jpg" alt="Coffee beans" class="products__card-image">
                         <p class="products__card-text">Coffee beans have been eaten for hundreds of years or more. It is
@@ -283,7 +286,7 @@
                         </p>
                         <button class="card-button product-btn">See more</button>
                     </li>
-                    <li class="procucts__card">
+                    <li class="products__card">
                         <p class="products__card-title">Ground coffee</p>
                         <img src="./images/ground-coffee.jpg" alt="Ground coffee" class="products__card-image">
                         <p class="products__card-text">Finer grinds are used for deeper flavors like espresso, while
@@ -292,7 +295,7 @@
                         </p>
                         <button class="card-button product-btn">See more</button>
                     </li>
-                    <li class="procucts__card">
+                    <li class="products__card">
                         <p class="products__card-title">Coffee capsules</p>
                         <img src="./images/capsules.jpg" alt="Coffee capsules" class="products__card-image">
                         <p class="products__card-text">A coffee capsules (pods) is a single-serving container with
