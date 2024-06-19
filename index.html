@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Coffee</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -13,10 +14,6 @@
         <div class="container">
             <ul class="header__menu">
                 <li class="header__logo-wrapper">
-                    <!-- <picture>
-                        <source media="(min-width:1024px)" srcset="./images/logo.png">
-                        <img src="./images/logo-50.png" alt="Elite Coffee" class="logo">
-                    </picture> -->
                     <img src="./images/logo.png" alt="Elite Coffee" class="logo">
                 <li>
                     <ul class="header__menu-location">
@@ -56,14 +53,6 @@
                         </li>
                     </ul>
                 </li>
-                <!-- <li>
-                    <p>
-                        <select name="currency" class="country">
-                            <option value="1">&#8364;</option>
-                            <option value="2">$</option>
-                        </select>
-                    </p>
-                </li> -->
                 <li>
                     <ul class="header__login">
                         <li><img src="./images/icons/fav-big.svg" alt="Fav"></li>
@@ -99,17 +88,20 @@
             </div>
         </section>
         <section class="brands">
-            <div class="brands__wrapper">
-                <div class="container">
-                    <ul class="brands__images">
-                        <li class="brands__image"><img src="./images/valdez.png" alt="Juan Valdes"></li>
-                        <li class="brands__image"><img src="./images/lavazza.png" alt="lavazza"></li>
-                        <li class="brands__image"><img src="./images/julius.png" alt="Julius Melni"></li>
-                        <li class="brands__image"><img src="./images/starbucks.png" alt="Starbucks"></li>
-                        <li class="brands__image"><img src="./images/illy.png" alt="Illy"></li>
-                        <li class="brands__image"><img src="./images/attibassi.png" alt="Attibassi"></li>
-                        <li class="brands__image"><img src="./images/malongo.png" alt="Malongo"></li>
-                    </ul>
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide brands__image"><img src="./images/valdez.png" alt="Juan Valdes"></div>
+                        <div class="swiper-slide brands__image"><img src="./images/lavazza.png" alt="lavazza"
+                                class="brands__image"></div>
+                        <div class="swiper-slide brands__image"><img src="./images/julius.png" alt="Julius Melni"></div>
+                        <div class="swiper-slide brands__image"><img src="./images/starbucks.png" alt="Starbucks"></div>
+                        <div class="swiper-slide brands__image"><img src="./images/illy.png" alt="Illy"></div>
+                        <div class="swiper-slide brands__image"><img src="./images/attibassi.png" alt="Attibassi"></div>
+                        <div class="swiper-slide brands__image"><img src="./images/malongo.png" alt="Malongo"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
@@ -309,17 +301,10 @@
             </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <ul class="footer__wrapper">
                 <li><img src="./images/logo.png" alt="Elite coffee"></li>
-                <li>
-                    <h3>Follow</h3>
-                    <p class="footer__socials">
-                        <img src="./images/facebook.svg" alt="Facebook">
-                        <img src="./images/instagram.svg" alt="Instagram">
-                    </p>
-                </li>
                 <li>
                     <h3>Our products</h3>
                     <ul class="footer__products">
@@ -346,12 +331,20 @@
                         </li>
                     </ul>
                 </li>
-
+                <li>
+                    <h3>Follow</h3>
+                    <p class="footer__socials">
+                        <img src="./images/facebook.svg" alt="Facebook">
+                        <img src="./images/instagram.svg" alt="Instagram">
+                    </p>
+                </li>
             </ul>
         </div>
 
-    </footer> -->
+    </footer>
     <script src="./scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
