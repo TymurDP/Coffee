@@ -7,6 +7,10 @@ const swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -21,4 +25,5 @@ const swiper = new Swiper(".mySwiper", {
       spaceBetween: 30,
     },
   },
+  speed: 800,
 });
