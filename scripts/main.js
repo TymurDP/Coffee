@@ -11,4 +11,3 @@ for (let i = 0; i < fav.length; i++) {
     } else fav[i].src = favNo;
   };
 }
-
